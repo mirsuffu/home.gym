@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3D Home Gym Rig - Final Build</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+
+    <div id="loading">Loading 3D GYM Environment...</div>
+    <div id="canvas-container"></div>
+    
+    <div id="ui-container">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 10px;">
+            <h1 style="margin: 0;">Home Gym Rig</h1>
+            <button id="toggle-ui">−</button>
+        </div>
+        <div id="ui-content">
+            <p><strong>Mobile Optimized Build</strong></p>
+            <div class="dimension"><span>Status:</span><span>Ready</span></div>
+            <div class="dimension"><span>Interactions:</span><span>Tap Gear</span></div>
+            
+            <div class="instruction">
+                • Tap Bench: Move to position<br>
+                • Tap Lat Bar: Start pulldown<br>
+                • Tap Gear: Rack/Unrack<br>
+                • Tap VKR: Detach/Attach
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
